@@ -8,12 +8,12 @@ version := "0.0.3"
 
 organization := "jbr.fruits"
 
-scalaVersion := "2.9.3"
+scalaVersion := "2.10.3"
 // -----------------------------
 // common dependencies
 // -----------------------------
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "1.9.1" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.0" % "test"
 
 // -----------------------------
 // Add your stuff here
