@@ -10,7 +10,6 @@ Working
 - `sbt PROJ/run` on projects
 - dependencies: banana and apple depend on fruitLib (ok for: assembly, run, eclipse)
 
-
 Important
 --------
 
@@ -19,7 +18,7 @@ Important
 - ✔ unit testing
 - ✔ unit test eclipse integration (use http://www.scalatest.org/user_guide/using_scalatest_with_eclipse )
 - ✔ capable of publishing to a local maven repo
-- override location of mave nrepo
+- override location of local maven repo
 - capable of publishing to an s3 repository
 - ✔ ivy dependencies
 - ✔ maven dependencies
@@ -47,8 +46,10 @@ By default, will run on root and recursively run on child projects
 - run on root project: `sbt run`
 - run on specific project: `sbt apple/run`
 
-### Assembly
+### Maven install
 
+- use `sbt publish` (configured in build.sbt) 
+- can specify a custom location for the maven repo: `-Dmaven.repo`. Example:
 
-
+ `sbt -Dmaven.repo=/home/bob/tmp/mavenRepo publish`
 
