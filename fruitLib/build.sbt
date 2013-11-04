@@ -2,13 +2,20 @@
 // project definition
 // -----------------------------
 
-name := "fruitLib"
+name := "Fruits fruitLib"
 
 version := "0.0.3"
 
 organization := "jbr.fruits"
 
 scalaVersion := "2.9.3"
+
+// -----------------------------
+// common dependencies
+// -----------------------------
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "1.9.1" % "test"
+
 
 // -----------------------------
 // Add your stuff here
