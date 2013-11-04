@@ -8,7 +8,7 @@ version := "0.0.3"
 
 organization := "fruits.jbr"
 
-scalaVersion := "2.9.3"
+scalaVersion := "2.10.3"
 
 // -----------------------------
 // Add your stuff here
