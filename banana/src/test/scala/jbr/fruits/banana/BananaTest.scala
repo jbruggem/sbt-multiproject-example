@@ -2,9 +2,9 @@ package jbr.fruits.banana
 
 import org.scalatest.FunSuite
 
-class MainTest extends FunSuite{
+class BananaTest extends FunSuite{
 
-	test("fruitLib fake test") {
+	test("banana fake test") {
 	  assert(true)
 	}
   
