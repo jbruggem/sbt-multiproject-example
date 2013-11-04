@@ -4,15 +4,26 @@
 SBT testing project
 ===================
 
+Working
+-------
+- `sbt test` on all projects
+- `sbt PROJ/run` on projects
+- dependencies: banana and apple depend on fruitLib (ok for: assembly, run, eclipse)
+
+
 Important
 --------
 
-- multi-project sbt
-- junit
-- capable of publishing to a local maven repo with an overridable location
+- ✔ multi-project sbt
+- ✔ multi-project works with eclipse (internal project dependencies added in path)
+- ✔ unit testing
+- ✔ unit test eclipse integration (use http://www.scalatest.org/user_guide/using_scalatest_with_eclipse )
+- ✔ capable of publishing to a local maven repo
+- override location of mave nrepo
 - capable of publishing to an s3 repository
-- sbt dependencies
-- maven dependencies
+- ✔ ivy dependencies
+- ✔ maven dependencies
+- ✔ assembly
 
 
 Nice to have
@@ -25,13 +36,19 @@ Tips & tricks
 -------------
 
 ### Files
+
 - `ROOT/project/Build.scala`: multi-project definition. This file is loaded with the root project, before build.sbt is loaded. Internal dependencies (i.e. between subprojects of this multi-project setup) should be defined there, and *not* in one of the build.sbt
 - `build.sbt`: each project has one. Put stuff unrelated to multi-project-ness
+- `assembly.sbt`: assembly settings
 
 ### Executing commands
 
 By default, will run on root and recursively run on child projects
 - run on root project: `sbt run`
 - run on specific project: `sbt apple/run`
+
+### Assembly
+
+
 
 
